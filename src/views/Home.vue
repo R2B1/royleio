@@ -1,18 +1,36 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="home-page">
+    <div class="image-container">
+      <SkullSVG id="skull-svg" />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import SkullSVG from "@/components/SVG/SkullSVG.vue";
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: { SkullSVG }
 };
 </script>
+
+<style scoped lang="scss">
+#home-page {
+  height: 100%;
+  width: 100%;
+  .image-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    #skull-svg {
+      margin-left: auto;
+      margin-right: auto;
+      width: 240px;
+      @media (min-width: 600px) {
+        width: 480px;
+      }
+    }
+  }
+}
+</style>

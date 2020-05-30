@@ -1,32 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Layout />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import Layout from "@/components/Layout.vue";
+export default {
+  name: "App",
+  components: {
+    Layout,
   }
+};
+</script>
+
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@300&display=swap');
+#app {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  @media (min-width: 600px) {
+    font-size: 18px;
+  }
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 </style>
