@@ -55,9 +55,9 @@ export default {
     });
 
     this.tween = gsap.to(this.wheel, {
-      angle: -1080,
-      duration: 8,
-      ease: "power2.out(1)"
+      angle: -720,
+      duration: 2,
+      ease: "back.out(1)"
     });
     this.isMounted = true;
   },

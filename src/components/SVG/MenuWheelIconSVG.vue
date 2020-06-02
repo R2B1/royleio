@@ -98,13 +98,11 @@ export default {
   },
   mounted() {
     this.tween = gsap.to(this.wheel, {
-      angle: 2160,
-      duration: 8,
-      ease: "back.out(1)",
-      repeat: 0,
-      paused: false
+      angle: 1080,
+      duration: 2,
+      ease: "back.out(1)"
     });
-  },
+  }
 };
 </script>
 

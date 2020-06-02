@@ -15,17 +15,17 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/projects",
-    name: "/Projects",
+    name: "/projects",
     component: Projects
   },
   {
     path: "/about",
-    name: "/About",
+    name: "/about",
     component: About
   },
   {
     path: "/contact",
-    name: "/Contact",
+    name: "/contact",
     component: Contact
   },
 ];

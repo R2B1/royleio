@@ -10,21 +10,18 @@
 <style scoped lang="scss">
 #about-page {
   height: 100%;
-  padding-top: 32px;
-  @media (min-width: 600px) {
-    padding-top: 64px;
-  }
+  padding: 64px 12px 72px 12px;
   #portrait {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 8px solid #000;
+    border: 8px solid #dadada;
     border-radius: 50%;
     width: 240px;
     @media (min-width: 600px) {
       float: left;
       shape-outside: circle(50%);
-      border: 12px solid #000;
+      border: 12px solid #dadada;
       width: 320px;
       margin-right: 48px;
     }
@@ -35,12 +32,9 @@
     }
   }
   #greeting {
-    font-family: "Comfortaa", sans-serif;
-    font-size: 28px;
     margin: 24px 0 24px 0;
     text-align: center;
     @media (min-width: 600px) {
-      font-size: 32px;
       margin: 64px 0 24px 0;
       text-align: left;
     }

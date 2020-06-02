@@ -39,7 +39,7 @@ export default {
 
 <style scoped lang="scss">
 #skull {
-  fill: #000;
+  fill: #dadada;
   &:hover {
     fill: url(#fill-gradient);
   }

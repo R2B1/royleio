@@ -85,7 +85,10 @@ export default {
 
 <style scoped lang="scss">
 #projects-page {
-  padding-top: 64px;
+  padding: 96px 12px 72px 12px;
+  a:hover {
+    border: 0;
+  }
   .flex-container {
     display: flex;
     width: 100%;

@@ -38,7 +38,7 @@ export default {
   display: grid;
   justify-items: start;
   align-items: end;
-  grid-template-rows: 96px auto 96px;
+  grid-template-rows: 96px auto 160px;
   grid-template-columns: 0px auto 0px;
   @media (min-width: 600px) {
     grid-template-rows: 128px auto 128px;
@@ -58,22 +58,20 @@ export default {
   grid-area: header;
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: 2;
+  z-index: 6;
 }
 .grid-footer {
   grid-area: footer;
-  background: #000;
   width: 100%;
   height: 100%;
+  z-index: 6;
 }
 .grid-center {
   grid-area: center;
   max-width: 800px;
   background: #fff;
   position: relative;
-  padding: 0 12px 0 12px;
-  z-index: 6;
+  z-index: 5;
 }
 .grid-left {
   grid-area: left;
